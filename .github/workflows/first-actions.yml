@@ -4,7 +4,8 @@ on: [push]
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: self-hosted # It uses self hosted runner i.e our ec2 instance
+# runs-on: ubuntu-lates will use git hosted runner(means the worker or agent like in jenkins) in order to build ci/cd pipeline
 
     strategy:
       matrix:
